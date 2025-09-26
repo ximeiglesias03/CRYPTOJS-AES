@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cryptojsaes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <script>
+        //Primer mensaje cifrado
+        let mensajeCifrado = "U2FsdGVkX196K/YEqrmlaawLjkyv2a5PugdGPbiRZCnL5QBkF/qsRhC1eJKMpEILH1RdjbMkriBX8sFiuNksKHgZPlNZE6XkNN62M2Qcxt/E7FzUZdYlfKgXpFsliDsMrKxaeC1z3LibYcbV/OAL5Q==";
+        let clave = "ClaveSecreta123";
+        console.log("Mensaje cifrado con AES: " + mensajeCifrado);
+
+        //Desciframos el mensaje utilizando AES
+        let mensajeDescifrado = CryptoJS.AES.decrypt(mensajeCifrado, clave);
+        console.log("Mensaje descifrado: " + mensajeDescifrado.toString(CryptoJS.enc.Utf8));
+
+        //Segundo mensaje cifrado
+        let mensajeCifrado2 = "U2FsdGVkX1/xN4srGzoKj9eom3hA92z2xzQxDPWqJcFtbZ4JC57vhknyxyPuKZCNwzcKE4n4gOgC5vz/pKvtS0UdVjDDEmCXuTj1RiXL20E=";
+        let clave2 = "ClaveSecreta123";
+        console.log("Mensaje cifrado con AES: " + mensajeCifrado2);
+
+         //Desciframos el mensaje utilizando AES
+         let mensajeDescifrado2 = CryptoJS.AES.decrypt(mensajeCifrado2, clave2);
+        console.log("Mensaje descifrado: " + mensajeDescifrado2.toString(CryptoJS.enc.Utf8));
+
+        //Tercer mensaje cifrado
+        let mensajeCifrado3 = "U2FsdGVkX1+Ee/kEdu6rc8cwk0Qru+H25xMARNelfwaPep6HFHLpvdbV+lTph2V0sTwyzWsSL82pSJHBLjUaajqx0ay4xYandtmmGTiMObUyGjaX1gzxewWDe3AwBiMB79LtwP8OLdlY90rk3VUDrqfeYIBm5G339yoa8+bFHjM=";
+        let clave3 = "ClaveSecreta123";
+        console.log("Mensaje cifrado con AES: " + mensajeCifrado3);
+
+        //Desciframos el mensaje utilizando AES
+         let mensajeDescifrado3 = CryptoJS.AES.decrypt(mensajeCifrado3, clave3);
+        console.log("Mensaje descifrado: " + mensajeDescifrado3.toString(CryptoJS.enc.Utf8));
+
+        //Cuarto mensaje cifrado
+        let mensajeCifrado4 = "U2FsdGVkX18G9w0tKAlXM4Ut6r7EvrFWxdAH5d2N8hku0MG/Gxk6j8rDvBJiG8gFax2H+wpN/7jJtY/MePUwTBtmAitffkLA5z8/NDgcJs8x/0jzVe08C6KImXZw2/7HOOkr+E1svsGJdExSTGikWj9mH0l7D7Un8tqv5MIkb3U=";
+        let clave4 = "ClaveSecreta123";
+        console.log("Mensaje cifrado con AES: " + mensajeCifrado4);
+
+         //Desciframos el mensaje utilizando AES
+         let mensajeDescifrado4 = CryptoJS.AES.decrypt(mensajeCifrado4, clave4);
+        console.log("Mensaje descifrado: " + mensajeDescifrado4.toString(CryptoJS.enc.Utf8));
+
+        //Quinto mensaje cifrado
+        let mensajeCifrado5 = "U2FsdGVkX19OdlHBkKzwQ/Pt/Z+vAk/2ie6lqHW9uTMYMJEHzBW6hIsgdTZnywXE/1ajRDl42JSDA9UWBSLSTOvBCkUgNQNRiZRS9dyIqwg55U7Ty2As+z/I/zrn5IMM8MqICqVT+hot3r8GJvc+lwFSxixjJ5jXnhoc3I30hFQ=";
+        let clave5 = "ClaveSecreta123";
+        console.log("Mensaje cifrado con AES: " + mensajeCifrado5);
+
+        //Desciframos el mensaje utilizando AES
+         let mensajeDescifrado5 = CryptoJS.AES.decrypt(mensajeCifrado5, clave4);
+        console.log("Mensaje descifrado: " + mensajeDescifrado5.toString(CryptoJS.enc.Utf8));
+
+    </script>
+    
+    
+</body>
+</html>

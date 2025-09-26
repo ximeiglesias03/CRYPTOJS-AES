@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AESJSON</title>
+</head>
+<body>
+    
+    <script>
+        let mensajes = [
+            {
+                "Mensajecifrado": "Mensaje cifrado: U2FsdGVkX196K/YEqrmlaawLjkyv2a5PugdGPbiRZCnL5QBkF/qsRhC1eJKMpEILH1RdjbMkriBX8sFiuNksKHgZPlNZE6XkNN62M2Qcxt/E7FzUZdYlfKgXpFsliDsMrKxaeC1z3LibYcbV/OAL5Q==",
+                "Mensajedescifrado": "Mensaje descifrado: No soy un pajaro y ninguna red me atrapa Soy un ser humano libre con una voluntad independiente",
+            },
+            {
+                "Mensajecifrado": "Mensaje cifrado: U2FsdGVkX1/xN4srGzoKj9eom3hA92z2xzQxDPWqJcFtbZ4JC57vhknyxyPuKZCNwzcKE4n4gOgC5vz/pKvtS0UdVjDDEmCXuTj1RiXL20E=",
+                "Mensajedescifrado": "Mensaje descifrado: Es preciso reirse de las cosas para mantener el equilibrio",
+            },
+            {
+                "Mensajecifrado": "Mensaje cifrado: U2FsdGVkX1+Ee/kEdu6rc8cwk0Qru+H25xMARNelfwaPep6HFHLpvdbV+lTph2V0sTwyzWsSL82pSJHBLjUaajqx0ay4xYandtmmGTiMObUyGjaX1gzxewWDe3AwBiMB79LtwP8OLdlY90rk3VUDrqfeYIBm5G339yoa8+bFHjM=",
+                "Mensajedescifrado": "Mensaje descifrado: Crees que sabes todas tus posibilidades. Entonces, otras personas llegan a tu vida y de repente hay muchas más",
+            },
+            {
+                "Mensajecifrado": "Mensaje cifrado: U2FsdGVkX18G9w0tKAlXM4Ut6r7EvrFWxdAH5d2N8hku0MG/Gxk6j8rDvBJiG8gFax2H+wpN/7jJtY/MePUwTBtmAitffkLA5z8/NDgcJs8x/0jzVe08C6KImXZw2/7HOOkr+E1svsGJdExSTGikWj9mH0l7D7Un8tqv5MIkb3U=",
+                "Mensajedescifrado": "Mensaje descifrado: Sea lo que sea de lo que estén hechas nuestras almas, la tuya y la mía están hechas de lo mismo",
+            },
+            {
+                "Mensajecifrado": "Mensaje cifrado: U2FsdGVkX19OdlHBkKzwQ/Pt/Z+vAk/2ie6lqHW9uTMYMJEHzBW6hIsgdTZnywXE/1ajRDl42JSDA9UWBSLSTOvBCkUgNQNRiZRS9dyIqwg55U7Ty2As+z/I/zrn5IMM8MqICqVT+hot3r8GJvc+lwFSxixjJ5jXnhoc3I30hFQ=",
+                "Mensajedescifrado": "Mensaje descifrado: Son nuestras elecciones las que muestran quiénes somos realmente, mucho más que nuestras habilidades",
+            }
+        ]
+
+        //Acceder al mensaje cifrado
+        for (let elemento of mensajes){
+            console.log(elemento.Mensajecifrado);
+        }
+
+        //Acceder al mensaje descifrado
+        for (let elemento of mensajes){
+            console.log(elemento.Mensajedescifrado);
+        }
+
+    </script>
+</body>
+</html>

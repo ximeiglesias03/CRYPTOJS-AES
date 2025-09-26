@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>algoritmoAES</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+  <script>
+    // Función que intenta descifrar el mensaje
+    function decryptMessage(ciphertext, key) {
+      try {
+        const bytes = CryptoJS.AES.decrypt(ciphertext, key);
+        const plaintext = bytes.toString(CryptoJS.enc.Utf8);
+        if (!plaintext) return null; // clave incorrecta o mensaje inválido
+        return plaintext;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // Pedir al usuario el mensaje cifrado y la clave
+    const mensajeCifrado = prompt("Introduce el mensaje cifrado:");
+    const clave = prompt("Introduce la clave:");
+
+    // Descifrar
+    const resultado = decryptMessage(mensajeCifrado, clave);
+
+    if (resultado) {
+      console.log("Mensaje descifrado:", resultado);
+    } else {
+      console.log("No se pudo descifrar (clave incorrecta o mensaje inválido)");
+    }
+  </script>
+</body>
+</html>
